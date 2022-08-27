@@ -18,23 +18,18 @@
 
 
     /* Other */
+    --border-color: #EEEEEE;
 }
 
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .container{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 
-    /* padding-left: auto;
-    padding-right: auto; */
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 }
 
 
@@ -43,7 +38,6 @@
 .page{
     position: relative;
     width: 1600px;
-    height: 2346px;
     font-family: var(--main-font);
     color: var(--main-txt-color);
     
@@ -58,7 +52,11 @@ h1,h2,h3,h4,h5,h6,p{
 
 img{
     display: block;
+    
+    max-width: 100%;
+    height: auto;
 }
+
 
 .link,
 .logo-header,
@@ -86,33 +84,36 @@ address{
     border-bottom: 1px solid #ECECEC;
 }
 
+
 .header-container{
     display: flex;
-    align-items: center;
 }
 
-.logo-header{
+.logo-header {
+    display: flex;
+
+    padding-top: 24px;
+    
     margin-right: 93px;
+    padding-bottom: 25px;
 }
 
-.main-nav{
+.main-nav {
     margin-right: auto;
 }
 
-.list-nav{
+.list-nav,
+.list-address-nav {
     display: flex;
     gap: 50px;
+    align-items: center;
 }
 
-.link-nav{
-    display: block;
+.link-nav {
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-.list-address-nav{
-    display: flex;
-    gap: 50px;
+    align-items: center;
 }
 
 .header,
@@ -154,9 +155,6 @@ address{
 
 /* main */
 
-/* .main{
-    
-} */
 
 .hero{
     background: #2F303A;
@@ -164,18 +162,19 @@ address{
 }
 
 .hero-container{
+    
     padding-top: 200px;
     padding-bottom: 200px;
-
-    
-
 }
 
 
 .caption{
+    
     width: 696px;
     min-height: 120px;
 
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -187,6 +186,10 @@ address{
 }
 
 .btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     width: 216px;
     min-height: 50px;   
     padding: 10px 31px;
@@ -194,7 +197,7 @@ address{
     border-radius: 4px;
     border: transparent;
     
-
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -208,9 +211,19 @@ address{
     cursor: pointer;
 }
  
+.feature-content{
+    
+    margin: 0;
+    padding: 0;
+}
 
 .features-container{
-    width: 270px;
+    
+
+   
+    padding-top: 94px;
+    padding-bottom: 94px;
+
 
 }
 
@@ -221,7 +234,14 @@ address{
 .features-list{
     display: block;
     display: flex;
+    gap: 30px;
+    justify-content: center;
 }
+
+.feature-item{
+    width: 270px;
+}
+
 
 .features {
     padding-bottom: 10px;
@@ -234,12 +254,19 @@ address{
     color: var(--main-txt-color);
 }
 .text {
+    
+
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--grey-txt-color);
 }
 
+
+.work-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .headline{
     padding-bottom: 50px;
@@ -256,10 +283,16 @@ address{
     display: flex;
     gap: 30px;
     justify-content: center;
+
 }
 
 .team-section{
     background-color: var(--light-grey-bg-color);
+}
+
+.team-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-list{
@@ -304,6 +337,12 @@ padding-bottom: 10px;
     background-color: #2F303A;
 }
 
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+}
+
 .logo-footer{
     display: block;
     padding-bottom: 20px;
@@ -336,9 +375,10 @@ padding-bottom: 10px;
 
 }
 
-.list-item{
+.footer-item{
     margin-bottom: 9px;
 }
+
 
 
 
@@ -346,6 +386,15 @@ padding-bottom: 10px;
 /* 
 PORTFOLIO
 */
+
+.portfolio-choice {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
 
 .button{
     padding: 6px 22px;
@@ -371,12 +420,29 @@ PORTFOLIO
     border-radius: 4px;
 }
 
+
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.portfolio-item{
+    /* box-sizing: border-box; */
+
+    background: var(--light-bg-color);
+    border: 1px solid var(--border-color);
+}
+
 .link-img{
     padding-bottom: 20px;
 }
 
 .subcat-title{
-padding-bottom: 4px;
+    padding-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
