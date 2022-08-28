@@ -238,12 +238,11 @@ address {
 }
 
 .section-work {
-  /* padding-top: 94px; */
   padding-bottom: 94px;
 }
 
 .headline {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -261,12 +260,11 @@ address {
 
 .team-section {
   background-color: var(--light-grey-bg-color);
-}
-
-.team-container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+
 
 .team-list {
   display: flex;
@@ -281,12 +279,13 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team {
+.team{
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .headline-team {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -307,21 +306,18 @@ address {
 /* footert */
 .footer {
   background-color: #2f303a;
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .logo-footer {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: var(--light-txt-color);
 }
 
 .address-text {
-  margin-bottom: 9px;
+  
 }
 
 .address-text,
@@ -349,12 +345,22 @@ address {
 PORTFOLIO
 */
 
+.subcat-section{
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.portfolio-container{
+  
+}
+
 .portfolio-choice {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-top: 94px;
-  padding-bottom: 50px;
+
+  margin-bottom: 50px;
+  
 }
 
 .button {
@@ -382,6 +388,15 @@ PORTFOLIO
   border-radius: 4px;
 }
 
+.subcat-contant{
+  padding: 20px 24px 54px 24px;
+
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -391,15 +406,13 @@ PORTFOLIO
 }
 
 .portfolio-item {
-  /* box-sizing: border-box; */
-
   background: var(--light-bg-color);
-  border: 1px solid var(--border-color);
+  
 }
 
-.link-img {
-  padding-bottom: 20px;
-}
+/* .link-img {
+  
+} */
 
 .subcat-title {
   padding-bottom: 4px;
