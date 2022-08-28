@@ -23,6 +23,7 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 
   /* outline: 2px solid red;
     outline-offset: -2px; */
@@ -31,8 +32,7 @@
 /* BODY */
 
 .page {
-  position: relative;
-  width: 1600px;
+
   font-family: var(--main-font);
   color: var(--main-txt-color);
 }
@@ -149,12 +149,11 @@ address {
 
 .hero {
   background: #2f303a;
-}
-
-.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
+
 
 .caption {
   width: 696px;
@@ -162,7 +161,7 @@ address {
 
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -200,12 +199,11 @@ address {
 .feature-content {
   margin: 0;
   padding: 0;
-}
-
-.features-container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+
 
 #hidden {
   display: block;
@@ -223,7 +221,7 @@ address {
 }
 
 .features {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -239,8 +237,8 @@ address {
   color: var(--grey-txt-color);
 }
 
-.work-container {
-  padding-top: 94px;
+.section-work {
+  /* padding-top: 94px; */
   padding-bottom: 94px;
 }
 
